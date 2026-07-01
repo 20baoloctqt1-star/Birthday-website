@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Birthday</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+
+<body>
+
+
+    <div class="container">
+
+
+        <h1>
+            Happy Birthday ❤️
+        </h1>
+
+
+        <h2>
+            For my favorite person 🌹
+        </h2>
+
+
+        <p>
+            I made this little website just for you.
+        </p>
+
+
+        <img src="/static/photo/photo2.jpg" class="photo">
+
+
+
+        <h2>
+            A little reminder 💌
+        </h2>
+
+
+        <p>
+            You make my ordinary days feel special.
+        </p>
+
+
+        <p>
+            Thank you for all the smiles and memories ❤️
+        </p>
+
+
+
+        <a href="/password">
+
+            <button>
+                Open your surprise 🎁
+            </button>
+
+        </a>
+
+
+    </div>
+
+
+
+    <script>
+
+
+        function createHeart() {
+
+            let heart = document.createElement("div");
+
+            heart.className = "heart";
+
+            heart.innerHTML = "❤️";
+
+
+            heart.style.left =
+                Math.random() * 100 + "vw";
+
+
+            document.body.appendChild(heart);
+
+
+            setTimeout(() => {
+
+                heart.remove();
+
+            }, 6000);
+
+
+        }
+
+
+        setInterval(createHeart, 400);
+
+
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html <html lang="en">
+
+</html>>
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Birthday</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+
+<body>
+
+
+    <div class="container">
+
+
+        <h1>
+            🎁 My Surprise For You ❤️
+        </h1>
+
+
+        <img src="/static/photo/photo1.jpg" class="photo">
+
+
+        <h2>
+            Happy Birthday ,Mai An ❤️
+
+        </h2>
+        Things I Love About You 🌹
+
+        <p>
+            ❤️ Your smile
+        </p>
+
+        <p>
+            ❤️ The way you make me laugh
+        </p>
+
+        <p>
+            ❤️ Your kindness and the way you care about people
+        </p>
+
+        <p>
+            ❤️ The little moments we share together
+        </p>
+
+        <p>
+            ❤️ The way you make life more special
+        </p>
+
+
+
+        <h2>
+            A little message for you 💌
+        </h2>
+
+
+
+        <button onclick="showLove()">
+
+            Click me ❤️
+
+        </button>
+
+
+        <h2 id="message"></h2>
+
+
+    </div>
+
+
+
+    <script>
+
+        function showLove() {
+
+            document.getElementById("message").innerHTML =
+                "Anh Yeu Em ❤️";
+
+        }
+
+
+
+        function createHeart() {
+
+            let heart = document.createElement("div");
+
+            heart.className = "heart";
+
+            heart.innerHTML = "❤️";
+
+            heart.style.left =
+                Math.random() * 100 + "vw";
+
+
+            document.body.appendChild(heart);
+
+
+            setTimeout(() => {
+
+                heart.remove();
+
+            }, 6000);
+
+        }
+
+
+        setInterval(createHeart, 400);
+
+
+    </script>
+
+
+</body>
+
+</html>
